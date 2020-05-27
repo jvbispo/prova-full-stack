@@ -36,12 +36,18 @@ const Dashboard: React.FC = () => {
 
   },[tasks])
 
+  //função que deleta um lembrete
+
   const handleDelete = useCallback(async (id)=>{
     await api.delete(`/tasks/${id}`)
     const filteredTasks = tasks.filter(task => task.id !== id)
 
     setTasks(filteredTasks)
   },[tasks])
+
+  // retorno dos lembretes com um map que renderiza todos os lembretes, com condicional
+  // para checar a presença da data, se tiver data de inicio e término, renderiza,
+  // se não, não renderiza
   return (
     <>
     <Menu visible={isVisible}/>

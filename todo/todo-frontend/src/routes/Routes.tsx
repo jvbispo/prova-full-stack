@@ -12,6 +12,9 @@ interface RouteProps extends ReactRouteProps {
   component: React.ComponentType;
 }
 
+// Aqui há uma validação dos dados de usuário para ver se o usuário vai ser redirecionado para
+// dashboard ou SignIn
+
 const Route: React.FC<RouteProps> = ({
   isPrivate = false,
   component: Component,

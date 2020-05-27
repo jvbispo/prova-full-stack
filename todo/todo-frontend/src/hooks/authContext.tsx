@@ -17,6 +17,8 @@ interface AuthContextData {
   signOut(): void;
 }
 
+
+// hook utilizando createContext para passar dados do usuário, sigIn e signOut
 const AuthContext = createContext<AuthContextData>({} as AuthContextData);
 
 export const AuthProvider: React.FC = ({ children }) => {

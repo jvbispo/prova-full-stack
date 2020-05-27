@@ -17,6 +17,8 @@ interface FormData {
   password: string;
 }
 
+// página de login com utilização do @unform com validação dos inputs
+
 const SignIn: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
   const { addToast } = useToast();

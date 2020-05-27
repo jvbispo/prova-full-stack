@@ -11,6 +11,7 @@ import getValidationErrors from '../../utils/getValidationErrors';
 import  api  from '../../service/api';
 import { useToast } from '../../hooks/toastContext';
 
+// página de cadastro da aplicação com @unform no formulário e validação com yup
 const SignUp: React.FC = () => {
   const formRef = useRef<FormHandles>(null);
   const { addToast } = useToast();
