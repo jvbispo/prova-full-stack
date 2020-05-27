@@ -10,7 +10,7 @@
 - Node.js
 - Typescript
 - Express
-- Mysql
+- Postgres
 - TypeORM
 - Jest (testes)
 - Tsyringe (injeção de dependencias)
