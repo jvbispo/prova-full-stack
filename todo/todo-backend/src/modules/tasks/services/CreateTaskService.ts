@@ -45,7 +45,7 @@ export default class CreateTaskService{
         categoryId = isCategory?.id
        }
 
-      const task = await this.taskRepository.create({title,body,category_id: categoryId,date_start,user_id})
+      const task = await this.taskRepository.create({title,body,category_id: categoryId,date_start,date_end,user_id})
 
 
       return task
