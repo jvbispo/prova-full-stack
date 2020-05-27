@@ -12,6 +12,8 @@
 - Express
 - Postgres
 - TypeORM
+- JWT
+- BCRYPT
 - Jest (testes)
 - Tsyringe (injeção de dependencias)
 - date-fns (manipulação de datas)
